@@ -1,0 +1,81 @@
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(84, 36, 36, 0.5)), url('../images/bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  color: white; /* Make text readable */
+  padding: 2rem;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+#toggle-password{
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.table{
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.table .section-header th{
+  background-color: #118181 !important;
+  color: #a8afb6;
+  font-weight: 600;
+  text-decoration: uppercace;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.table-bordered{
+  border: 1px solid #dddddd;
+}
+
+.table-bordered > tbody > tr > td,
+.table-bordered > thead > tr > th{
+  border: 1px solid #dddddd;
+}
+.table-hover tbody tr:hover{
+  background-color: #798e92;
+}
+.search-bar, .add-resource, .add-employees {
+  margin: 16px 0;
+  display: flex;
+  gap: 8px;
+}
+.dataTables_wrapper .dataTables_info{
+  float:left;
+}
+
+.dataTables_wrapper .dataTables_paginate{
+  float:right;
+}
+
+.dataTables_wrapper .dataTables_paginate ul.pagination{
+  margin:0;
+}
+
+.dataTables_wrapper:after{
+  content:"";
+  display:block;
+  clear:both;
+}
